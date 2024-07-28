@@ -137,7 +137,7 @@ const LoginPage = ({ setIsLoggedIn, setConnectionInfo }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/login', { host, username, password });
+      await axios.post('https://ai-sql-query-assistant.onrender.com/login', { host, username, password });
       setIsLoggedIn(true);
       setConnectionInfo({ host, username, password });
       setSnackbarMessage('Login successful!');

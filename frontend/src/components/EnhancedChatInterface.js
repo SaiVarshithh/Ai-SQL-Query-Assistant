@@ -288,7 +288,7 @@ export default function ProfessionalAIDatabaseAssistant({ connectionInfo, setIsL
 
   const fetchDatabases = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/databases', {
+      const response = await axios.get('https://ai-sql-query-assistant.onrender.com/databases', {
         params: {
           host: connectionInfo.host,
           user: connectionInfo.username,
@@ -330,7 +330,7 @@ export default function ProfessionalAIDatabaseAssistant({ connectionInfo, setIsL
   
     try {
 
-      const response = await axios.post('http://localhost:8000/query', {
+      const response = await axios.post('https://ai-sql-query-assistant.onrender.com/query', {
         database: selectedDatabase,
         query: inputQuery,
       }, {
