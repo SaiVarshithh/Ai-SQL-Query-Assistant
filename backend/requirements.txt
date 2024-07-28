@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pymysql
+pydantic
+python-dotenv
+pandas
+requests
+sqlalchemy
+streamlit
+streamlit_option_menu
+mysql-connector-python
