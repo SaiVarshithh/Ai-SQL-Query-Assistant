@@ -15,7 +15,7 @@ security = HTTPBasic()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://sql-assistant-indol.vercel.app"],
+    allow_origins=["https://ai-sql-query-assistant.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
